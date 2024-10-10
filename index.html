@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Services UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo aligned to the left -->
+            <a class="navbar-brand" href="#">Logo</a>
+
+            <!-- Toggler button for mobile screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links (centered) and Username button (right) -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!-- Centered Navbar Links -->
+                <ul class="navbar-nav mx-auto gap-3">
+                    <li class="nav-item"><a class="navLinks gray mb-0" href="#">Home</a></li>
+                    <li class="nav-item"><a class="navLinks gray mb-0" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="navLinks gray mb-0" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="navLinks gray mb-0" href="#contact">Contact Us</a></li>
+                </ul>
+
+                <!-- Username button aligned to the right -->
+                <button class="btn btn-primary d-lg-block">UserName</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container hero-section my-5 py-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="fw-bold ">Revitalize Your Clothes with Expert <span class="text-primary">Laundry
+                        Services!</span></h1>
+                <p>From premium dry cleaning to swift wash and fold, we <br class="d-none d-xl-block" /> deliver care
+                    and convenience. Schedule a pickup
+                    and <br class="d-none d-xl-block" /> rediscover the freshness of your clothes today!</p>
+                <a href="#services">
+                    <button class="btn btn-primary" onclick="scrollToBooking()">Book a Service Today</button>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="p-md-4">
+                    <img src="images/first.jpg" alt="Laundry Service">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Overview Section -->
+    <div class="service-overview">
+        <div class="container achievements">
+            <div class="row align-items-center justify-content-center py-4">
+                <div class="col-lg-6">
+                    <h2 class="text-center text-lg-start fs-1">Our Achievements</h2>
+                </div>
+                <div class="col-6 pt-2 pt-sm-4 pt-lg-0 col-sm-4 col-lg-2">
+                    <h3 class="mb-0 fw-bold">15+ </h3>
+                    <p class="mb-0">Laundry Services</p>
+                </div>
+                <div class="col-6 pt-2 pt-sm-4 pt-lg-0 col-sm-4 col-lg-2">
+                    <h3 class="mb-0 fw-bold">240+ </h3>
+                    <p class="mb-0">Happy Customers</p>
+                </div>
+                <div class="col-6 pt-4 pt-lg-0 col-sm-4 col-lg-2">
+                    <h3 class="mb-0 fw-bold">2+ </h3>
+                    <p class="mb-0">Yrs Experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Services Section -->
+    <div class="bg-gray">
+        <div class="container py-5" id="services">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="service-container">
+                        <h3>Our Services</h3>
+                        <p>Click on the Add to Cart button to add the services to your cart.</p>
+                        <div class="border-top border-bottom py-3 d-flex flex-column gap-3">
+                            <div class="service-card">
+                                <p class="mb-0">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="none" stroke="blue" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1"
+                                                d="m15 4l6 2v5h-3v8a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8H3V6l6-2a3 3 0 0 0 6 0" />
+                                        </svg>
+                                    </span> Dry Cleaning <span class="mx-1 center bg-primary "></span>
+                                    <span>₹200.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Dry Cleaning', 200)">Add
+                                    Item <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 32 32">
+                                            <path fill="blue"
+                                                d="M16 11a7 7 0 1 0 0 14a7 7 0 0 0 0-14m-5 7a5 5 0 0 1 9.987-.363a2.8 2.8 0 0 1-.672.405c-.694.3-1.839.478-3.814-.016c-2.204-.55-3.69-.223-4.728.421c-.26.162-.485.339-.68.516A5 5 0 0 1 11 18m.5-10a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0M17 7a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2zM7.5 3A4.5 4.5 0 0 0 3 7.5v17A4.5 4.5 0 0 0 7.5 29h17a4.5 4.5 0 0 0 4.5-4.5v-17A4.5 4.5 0 0 0 24.5 3zM5 7.5A2.5 2.5 0 0 1 7.5 5h17A2.5 2.5 0 0 1 27 7.5v17a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 5 24.5z" />
+                                        </svg>
+                                    </span>
+                                    Maching Washing <span class="mx-1 center bg-primary "></span>
+                                    <span>350.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Maching Washing', 350)">Add
+                                    Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 512 512">
+                                            <path fill="blue"
+                                                d="M260.375 19.656c-38.78 0-73.995 3.935-100.5 12.407c-13.253 4.235-24.39 9.556-32.813 16.78c-8.42 7.226-14.124 17.087-14.124 28.094c0 4.472.917 8.784 2.53 12.876c3.433 52.216-35.145 118.26-77.28 151.406c9.894 50.565 32.645 102.465 66.53 149.81c39.964 32.405 91.668 49.857 144.282 52.314v-33.75c-16.175-.15-31.88-.668-44.5-1.594l1.375-18.625c11.96.878 27.288 1.356 43.125 1.5V350.97c-15.294.57-29.984 2.542-41.063 5.936l-5.5-17.875c13.523-4.142 29.83-6.512 46.563-7.155v-33.5c-4.892.263-9.767.762-14.594 1.438c-28.855 1.45-53.472 5.125-75.906 10.593l-.22-.28c28.03-20.89 64.05-31.314 100.064-31.313c36.015 0 72.034 10.425 100.062 31.312l-.125.188c-22.516-5.463-47.247-9.113-76.25-10.532c-4.746-.656-9.533-1.148-14.342-1.405v33.5c16.734.643 33.04 3.013 46.562 7.156l-5.47 17.876c-11.084-3.396-25.787-5.366-41.092-5.937v39.905c15.843-.144 31.16-.622 43.125-1.5L312.188 408c-12.627.927-28.317 1.445-44.5 1.594v34c54.5-1.12 108.566-18.29 150.187-51.47c35.375-47.383 58.567-98.53 68.5-148.405c-43.943-32.66-85.096-102.138-80.344-156c1.132-3.463 1.75-7.065 1.75-10.782c0-11.008-5.67-20.87-14.092-28.094s-19.59-12.546-32.844-16.782c-26.506-8.47-61.687-12.406-100.47-12.406zm0 18.688c37.48 0 71.312 4.03 94.78 11.53c11.736 3.752 20.793 8.394 26.345 13.157c5.552 4.765 7.594 8.92 7.594 13.907c0 2.495-.582 5.05-1.875 7.688c-36.805-16.793-82.838-25.218-128.876-25.22c-44.633 0-89.28 7.903-125.5 23.69c-.83-2.1-1.22-4.145-1.22-6.157c0-4.99 2.042-9.143 7.595-13.907c5.55-4.762 14.608-9.404 26.343-13.155c23.47-7.5 57.334-11.53 94.812-11.53zm-2.03 40.468c41.273 0 82.56 6.716 115.186 20.188c-5.193 3.626-11.645 7.13-19.155 10.28c-23.424 9.827-56.93 16.22-94 16.22s-70.607-6.393-94.03-16.22c-8.22-3.446-15.152-7.322-20.564-11.31c32.202-12.77 72.385-19.16 112.563-19.158m-35.908 63.25a319 319 0 0 0 19.22 1.625c.814 5.004 1.705 10.514 2.624 16.688c2.72 18.253 5.47 39.27 5.47 52.875c0 15.196-5.87 28.974-16.03 39.594c-10.163 10.62-24.316 18.284-41.25 23.28c-18.763 5.537-41.102 7.852-66.032 6.72c-23.82-3.486-42.194-13.06-59.97-27.656c48.897 11.737 91.53 11.613 120.72 3c14.638-4.32 25.797-10.72 33.03-18.282c7.235-7.56 10.845-16.048 10.845-26.656c0-10.86-2.608-32.175-5.282-50.125a1238 1238 0 0 0-3.343-21.063zm71.688.47c-.946 5.705-2.108 12.72-3.28 20.593c-2.675 17.95-5.283 39.265-5.283 50.125c0 10.608 3.61 19.096 10.844 26.656s18.393 13.962 33.03 18.28c29.11 8.59 71.588 8.735 120.314-2.905c-17.762 14.562-36.125 24.13-59.938 27.595c-24.778 1.092-46.988-1.242-65.656-6.75c-16.935-4.997-31.088-12.66-41.25-23.28s-16.03-24.4-16.03-39.595c0-13.606 2.78-34.622 5.5-52.875c.905-6.08 1.788-11.517 2.593-16.47a324 324 0 0 0 19.155-1.374zm121.25 274.655c-88.88 60.702-217.204 60.827-306.25.375l-2.375 39.188c6.073 8.603 23.877 18.598 49.406 25.094c27.31 6.95 62.423 10.798 98.313 11.125c35.888.326 72.623-2.834 103.374-9.47c28.162-6.078 51.078-15.495 63.47-26.03l-5.94-40.283z" />
+                                        </svg>
+                                    </span>Leather & Suede Cleaning <span class="mx-1 center bg-primary "></span>
+                                    <span>₹999.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Leather & Suede Cleaning', 999)">Add Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 256 256">
+                                            <path fill="blue"
+                                                d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16m0 176H48V48h160zM128 64a64 64 0 1 0 64 64a64.07 64.07 0 0 0-64-64m0 112a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48m72-108a12 12 0 1 1-12-12a12 12 0 0 1 12 12m-74.34 49.66l-16 16a8 8 0 0 1-11.32-11.32l16-16a8 8 0 0 1 11.32 11.32m32-3.32a8 8 0 0 1 0 11.32l-32 32a8 8 0 0 1-11.32-11.32l32-32a8 8 0 0 1 11.32 0" />
+                                        </svg>
+                                    </span>Ironing washing <span class="mx-1 center bg-primary "></span>
+                                    <span>₹899.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Ironing washing', 899)">Add Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="none" stroke="blue" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1"
+                                                d="M12 19v2M9 4h7.459a3 3 0 0 1 2.959 2.507l.577 3.464l.81 4.865A1 1 0 0 1 19.82 16H3a7 7 0 0 1 7-7h9.8M8 19l-1 2m9-2l1 2" />
+                                        </svg>
+                                    </span>Ironig <span class="mx-1 center bg-primary "></span>
+                                    <span>₹699.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Ironing', 699)">Add Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 48 48">
+                                            <path fill="none" stroke="blue" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="4"
+                                                d="M10 44h28a2 2 0 0 0 2-2V14H30V4H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2M30 4l10 10M17 28h14" />
+                                        </svg>
+                                    </span>Stanin Removel <span class="mx-1 center bg-primary "></span>
+                                    <span>₹1099.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Stanin Removel', 1099)">Add Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="blue"
+                                                d="M7.885 22L6.154 9h11.712l-1.731 13zm4.113-6.5q1.04 0 1.771-.73q.731-.728.731-1.77v-1.5h-1V13q0 .617-.441 1.059q-.442.441-1.059.441t-1.059-.441T10.5 13v-1.5h-1V13q0 1.042.729 1.77q.728.73 1.769.73m3.004-8.52q-.415 0-.709-.29T14 5.983t.291-.709t.707-.293t.709.29t.293.708t-.291.709t-.707.293M10 5.98q-.82 0-1.41-.59T8 3.97t.59-1.41t1.42-.58t1.41.58t.58 1.42q0 .819-.58 1.41q-.58.59-1.42.59" />
+                                        </svg>
+                                    </span>Suedu Cleaning <span class="mx-1 center bg-primary "></span>
+                                    <span>₹399.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'Suedu Cleaning', 399)">Add Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="service-card">
+
+                                <p class="mb-0"> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="none" stroke="blue" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1"
+                                                d="M12 19v2M9 4h7.459a3 3 0 0 1 2.959 2.507l.577 3.464l.81 4.865A1 1 0 0 1 19.82 16H3a7 7 0 0 1 7-7h9.8M8 19l-1 2m9-2l1 2" />
+                                        </svg>
+                                    </span>wedding Dress <span class="mx-1 center bg-primary "></span>
+                                    <span>₹1699.00</span>
+                                </p>
+                                <button class="btn py-1 btn-primary btn-toggle"
+                                    onclick="toggleItem(this, 'wedding Dress', 1699)">Add Item
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24">
+                                            <path fill="white"
+                                                d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex gap-2 text-primary pt-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g fill="none" stroke="blue" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-width="2" />
+                                    <path stroke-width="3" d="M12 8h.01v.01H12z" />
+                                    <path stroke-linecap="round" stroke-width="2" d="M12 12v4" />
+                                </g>
+                            </svg>
+                            Add items to the cart and book now
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-4 mt-4 mt-lg-0">
+                    <div class="cart-container">
+                        <h4 class="mb-1">Added Items</h4>
+                        <table class="table mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="w-10">S.No</th>
+                                    <th class="text-start">Service Name</th>
+                                    <th class="text-end">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="added-items" class="h-160">
+                                <tr id="no-items">
+                                    <td colspan="3" class="text-center py-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" stroke="gray" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-width="2" />
+                                                <path stroke-width="3" d="M12 8h.01v.01H12z" />
+                                                <path stroke-linecap="round" stroke-width="2" d="M12 12v4" />
+                                            </g>
+                                        </svg>
+                                        <span class="d-block fw-bold pt-2 not-item"> No Items Added</span>
+                                        <span class="d-block">Add items to the cart from the service bar</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="">
+                            <div class="d-flex justify-content-between pt-2">
+                                <p class="fw-bold m-0">Total</p>
+                                <p class="fw-bold m-0 total-amount">₹ 0.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-4 cart-container">
+                        <h5>Book Now</h5>
+                        <form id="booking-form mb-0">
+                            <div class="mb-3">
+                                <label for="fullName" class="pb-2">UserName</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row gap-sm-3">
+                                <div class="mb-3 w-100">
+                                    <label for="email" class="pb-2">Email</label>
+                                    <input type="email" id="email" class="form-control w-100" placeholder="Email ID">
+                                </div>
+                                <div class="mb-3 w-100">
+                                    <label for="phoneNumber" class="pb-2">Phone Number</label>
+                                    <input type="tel" id="phoneNumber" class="form-control w-100"
+                                        placeholder="0000000000">
+                                </div>
+                            </div>
+                            <button type="button" class="btn mb-0 btn-primary w-100" onclick="bookNow()">Book
+                                Now</button>
+                            <div class="pb-2 position-relative">
+                                <p id="error-message" class="error-message mb-0 position-absolute"></p>
+                                <div id="success-message" class="error-message mb-0 position-absolute"
+                                    style="color: green;"></div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container w-100 pt-lg-5">
+        <div class="row py-4">
+            <div class="col-lg-3 col-sm-6 d-flex flex-column justify-content-center align-items-center p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 14 14"
+                    aria-label="Washing Machine Icon" title="Washing Machine Icon">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11.5.5h-9a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-11a1 1 0 0 0-1-1" />
+                        <path
+                            d="M9.959 9h-.841C8.383 9 7.658 8.829 7 8.5v0A4.7 4.7 0 0 0 4.882 8h-.84M10 8.5a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-8.5-5h11" />
+                    </g>
+                </svg>
+                <h4 class="fw-bold mt-3">Premium Services</h4>
+                <p class="mt-1">Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel
+                    as good as new.</p>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 d-flex flex-column justify-content-center align-items-center p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M18.586 5H14V3h8v8h-2V6.414l-3.537 3.537a7.5 7.5 0 1 1-1.414-1.414z" />
+                </svg>
+                <h4 class="fw-bold mt-3"> Quick Support</h4>
+                <p class="mt-1">We're committed to providing prompt solutions to ensure your experience is smooth and
+                    worry-free.</p>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 d-flex flex-column justify-content-center align-items-center p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <defs>
+                        <mask id="ipTDelivery0">
+                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="4">
+                                <path d="m20 33l6 2s15-3 17-3s2 2 0 4s-9 8-15 8s-10-3-14-3H4" />
+                                <path
+                                    d="M4 29c2-2 6-5 10-5s13.5 4 15 6s-3 5-3 5M16 18v-8a2 2 0 0 1 2-2h24a2 2 0 0 1 2 2v16" />
+                                <path fill="#555" d="M25 8h10v9H25z" />
+                            </g>
+                        </mask>
+                    </defs>
+                    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDelivery0)" />
+                </svg>
+                <h4 class="fw-bold mt-3">Hasssle Free Delivery</h4>
+                <p class="mt-1">Enjoy seamless service with our convenient pickup and delivery options, tailored to your
+                    schedule.</p>
+            </div>
+
+
+            <div
+                class="col-lg-3 col-sm-6  d-flex flex-column justify-content-center align-items-center p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        d="m33.37 32.57l.12-4.07a9.5 9.5 0 0 0 1-.81C42.08 20 43.77 8.41 41.67 6.34S28 6 20.3 13.59a11 11 0 0 0-.81 1l-4.07.12A4 4 0 0 0 12 16.75L5.63 28.41a1 1 0 0 0 1.29 1.36l8.58-4.13a13.6 13.6 0 0 0 0 3.72L11.14 35a.71.71 0 0 0 0 .91l.47.44l.44.47a.72.72 0 0 0 .92 0l5.63-4.39a13.6 13.6 0 0 0 3.72 0L18.3 41.1a1 1 0 0 0 1.3 1.28L31.29 36a4 4 0 0 0 2.08-3.38ZM38 10.06a2.06 2.06 0 1 1-2.92 0a2.06 2.06 0 0 1 2.92 0m-9.1 9.1a3.44 3.44 0 1 1 4.87 0a3.44 3.44 0 0 1-4.87 0m0 0" />
+                </svg>
+                <h4 class="fw-bold mt-3"> Affordable Prices</h4>
+                <p class="mt-1">Experience exceptional care without breaking the bank – our attractive prices make
+                    laundry day stress-free.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row  py-4">
+                <div class="col-lg-6">
+                    <h3 class="text-white fw-bold display-5 ps-xl-4 mb-3 mb-lg-0 text-center text-lg-start"> Subscribe
+                        to our <br class="d-none d-xl-block">
+                        newsletter.</h3>
+                </div>
+                <div class="col-lg-6 bg-primary">
+
+                    <form>
+
+                        <div class="d-flex flex-column flex-sm-row gap-sm-3">
+                            <div class="w-100">
+
+                                <input type="tel" id="phoneNumber" class="form-control w-100" placeholder="0000000000">
+                            </div>
+                            <div class="w-100 mt-3 mt-sm-0">
+
+                                <input type="email" id="email" class="form-control w-100" placeholder="Email ID">
+                            </div>
+
+                        </div>
+                        <button type="button" class="btn bg-white scribe w-button p-1 fw-bold mt-3 ">
+                            Subscribe</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container pt-4 pb-3">
+            <div class="row pb-2 pt-md-4">
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                    <a href="/">
+                        <h2 class="fs-1 text-black fw-bold">Logo</h2>
+                    </a>
+                    <h3 class="fs-4 gray">About Us</h3>
+                    <p class="mb-0 gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-12 col-sm-6 pt-4 pt-sm-0">
+                    <h5>Important Links</h5>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="footer-links">Contact us</a>
+                        <a href="#" class="footer-links">Privacy Policy</a>
+                        <a href="#" class="footer-links">Terms of use</a>
+                        <a href="#" class="footer-links">Refund Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-12 pt-4 col-sm-6 pt-md-0">
+                    <h5>Contact</h5>
+                    <div class="d-flex flex-column gap-1">
+                        <a class="footer-links" href="mailto: example@example.com">Email: example@example.com</a>
+                        <a class="footer-links" href="telto: +1234567890">Phone: +1234567890</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 col-12 pt-4 col-sm-6 pt-lg-0 ">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-3 scoal-icon">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <path stroke="black" stroke-width="2"
+                                        d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z" />
+                                    <circle cx="16.5" cy="7.5" r="1.5" fill="black" />
+                                    <circle cx="12" cy="12" r="3" stroke="black" stroke-width="2" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="black"
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="black" fill-rule="evenodd"
+                                    d="M15.022 3.343c.508-.087 1.077-.116 1.613-.025a4.85 4.85 0 0 1 2.54 1.273c.456.01.905-.08 1.302-.208a5.4 5.4 0 0 0 1.098-.501l.009-.006a.75.75 0 0 1 1.042 1.037c-.207.315-.496.877-.819 1.507l-.155.301c-.185.36-.375.724-.552 1.036c-.111.196-.23.395-.35.567v.274A12.34 12.34 0 0 1 8.287 21.03a12.3 12.3 0 0 1-6.694-1.97a.75.75 0 0 1 .5-1.375q.45.055.905.055a7.5 7.5 0 0 0 3.128-.696a4.86 4.86 0 0 1-2.61-2.923a.75.75 0 0 1 .147-.722l.01-.01A4.85 4.85 0 0 1 2.05 9.793V9.74a.75.75 0 0 1 .553-.724A4.84 4.84 0 0 1 2.09 6.84a4.9 4.9 0 0 1 .65-2.442a.75.75 0 0 1 1.232-.1a10.9 10.9 0 0 0 7.006 3.93a4.85 4.85 0 0 1 2.562-4.406c.402-.214.934-.385 1.482-.479m-11.28 7.548a3.35 3.35 0 0 0 2.503 2.164a.75.75 0 0 1 .072 1.453q-.409.124-.834.173a3.36 3.36 0 0 0 2.59 1.3a.75.75 0 0 1 .45 1.339a9 9 0 0 1-3.548 1.695a10.8 10.8 0 0 0 3.313.515h.009A10.84 10.84 0 0 0 19.25 8.607v-.535a.75.75 0 0 1 .186-.495c.07-.079.19-.261.36-.56c.16-.282.338-.622.523-.981l.033-.066a5 5 0 0 1-1.593.097a.75.75 0 0 1-.47-.237a3.35 3.35 0 0 0-1.904-1.032a3.4 3.4 0 0 0-1.11.025a3.6 3.6 0 0 0-1.028.323a3.35 3.35 0 0 0-1.678 3.74a.75.75 0 0 1-.767.925a12.4 12.4 0 0 1-8.149-3.627a3.4 3.4 0 0 0-.063.657v.002a3.34 3.34 0 0 0 1.486 2.785A.75.75 0 0 1 4.64 11a5 5 0 0 1-.897-.11"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="black"
+                                    d="M19.607 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.501 6 12.001 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592c-.109.424-.394 2.2-.394 5.005s.285 4.58.394 5.006c.076.297.292.522.538.59C5.373 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592c.11-.424.394-2.205.394-5.005s-.285-4.58-.394-5.005m1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.897 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.108 4 12.001 4 12.001 4s5.896 0 7.605.476c.944.266 1.687 1.04 1.938 2.022M10.001 15.5v-7l6 3.5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        let cart = [];
+        let totalAmount = 0;
+
+        function toggleItem(button, service, price) {
+            const itemIndex = cart.findIndex(item => item.service === service);
+
+            if (itemIndex > -1) {
+                removeItem(service, price);
+                button.innerHTML = `Add Item <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24"><path fill="white" d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z"/></svg></span>`;
+            } else {
+                addItem(service, price);
+                button.innerHTML = `Remove Item <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24"><path fill="white" d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m5 11v-2H7v2h10Z"/></svg></span>`;
+            }
+        }
+
+        function addItem(service, price) {
+            cart.push({ service, price });
+            totalAmount += price;
+            displayCart();
+        }
+
+        function removeItem(service, price) {
+            cart = cart.filter(item => item.service !== service);
+            totalAmount -= price;
+            displayCart();
+        }
+
+        function displayCart() {
+            const cartItems = document.getElementById('added-items');
+            cartItems.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = `
+                    <tr id="no-items">
+                        <td colspan="3" class="text-center py-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24">
+                                <g fill="none" stroke="gray" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-width="2" />
+                                    <path stroke-width="3" d="M12 8h.01v.01H12z" />
+                                    <path stroke-linecap="round" stroke-width="2" d="M12 12v4" />
+                                </g>
+                            </svg>
+                            <span class="d-block fw-bold pt-2 not-item"> No Items Added</span>
+                            <span class="d-block">Add items to the cart from the service bar</span>
+                        </td>
+                    </tr>
+                `;
+            } else {
+                cart.forEach((item, index) => {
+                    const row = `
+                        <tr>
+                            <td class="w-10">${index + 1}</td>
+                            <td>${item.service}</td>
+                            <td class="text-end w-40">₹${item.price}</td>
+                        </tr>
+                    `;
+                    cartItems.innerHTML += row;
+                });
+            }
+
+            // Update the total amount display
+            document.querySelector('.total-amount').textContent = `₹ ${totalAmount.toFixed(2)}`;
+        }
+
+        function bookNow() {
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+            const errorMessage = document.getElementById('error-message');
+            const successMessage = document.getElementById('success-message');
+
+            // Clear previous messages
+            errorMessage.textContent = '';
+            successMessage.textContent = '';
+
+            if (cart.length === 0) {
+                errorMessage.textContent = 'Please add items to the cart before booking.';
+                return;
+            }
+
+            if (!fullName || !email || !phoneNumber) {
+                errorMessage.textContent = 'Please fill in all fields.';
+                return;
+            }
+
+            // Simple email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                errorMessage.textContent = 'Please enter a valid email address.';
+                return;
+            }
+
+            // Show success message
+            successMessage.textContent = 'successful! Thank you for your order.';
+
+            // Send email using EmailJS
+            const templateParams = {
+                to_email: email,
+                from_name: fullName,
+                message: `Your booking with a total amount of ₹${totalAmount.toFixed(2)} has been confirmed.`,
+            };
+
+            emailjs.init("RO1ZxK7Nj-laYtk6L");
+            emailjs.send("service_vnvpiol", "template_7r2ib31", templateParams)
+                .then(function (response) {
+                    console.log('Email sent successfully:', response.status, response.text);
+
+                    // Remove the booking success message and show email confirmation message
+                    successMessage.textContent = 'An email confirmation has been sent.';
+
+                    // After 5 seconds, remove the email confirmation message
+                    setTimeout(() => {
+                        successMessage.textContent = '';
+                    }, 5000);
+
+                }, function (error) {
+                    console.log('Failed to send email:', error);
+                    errorMessage.textContent = 'Booking successful but failed to send email confirmation.';
+                });
+
+            // Reset the form and cart
+            resetForm();
+
+            // Clear the success message after the form reset (to avoid flashing)
+            setTimeout(() => {
+                successMessage.textContent = '';
+            }, 5000);
+        }
+
+        function resetForm() {
+            document.getElementById('fullName').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phoneNumber').value = '';
+            cart = [];
+            totalAmount = 0;
+            displayCart();
+
+            // Reset all toggle buttons to "Add Item" state
+            const toggleButtons = document.querySelectorAll('.btn-toggle');
+            toggleButtons.forEach(button => {
+                button.innerHTML = `Add Item <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 24 24"><path fill="white" d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4z"/></svg></span>`;
+            });
+        }
+
+    </script>
+
+
+</body>
+
+</html>
